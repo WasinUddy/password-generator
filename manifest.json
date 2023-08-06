@@ -1,6 +1,6 @@
 {
   "short_name": "Password Generator",
-  "name": "Create React App Sample",
+  "name": "Simple Web App for Password generation",
   "icons": [
     {
       "src": "icon.png",
