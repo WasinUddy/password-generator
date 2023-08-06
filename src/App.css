@@ -1,4 +1,144 @@
-.config {
-  display: flex;
+/* App.css */
 
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  font-size: 18px; /* Default font size */
+}
+
+/* Define base font size using root (html) element */
+html {
+  font-size: 18px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  html {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.GenPass {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 70rem; /* Set a max-width for the GenPass container */
+}
+
+.GenPass h1 {
+  color: #ff6767;
+  font-size: 2.5rem;
+}
+
+.password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 0.2rem solid #bcbcbc;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  max-width: 70rem; /* Set the same max-width as .GenPass and .config */
+  margin: 0 auto;
+}
+
+.password h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.refresh {
+  display: inline-block;
+  background-color: #ff6767;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem; /* Make the button square */
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  outline: none;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+/* Improve the appearance of the slider */
+.config {
+  background-color: #ffffff;
+  border: 0.2rem solid #bcbcbc;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  max-width: 50rem; /* Set the same max-width for the config container */
+
+}
+
+.length-selector-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+input[type='text'] {
+  width: 5rem;
+  padding: 0.5rem;
+  border: 0.2rem solid #bcbcbc;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-right: 1rem;
+  outline: none;
+}
+
+input[type='checkbox'] {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+input[type='range'] {
+  flex: 1;
+  -webkit-appearance: none;
+  width: 100%; /* You can adjust this value to make the slider longer */
+  margin: 0;
+  background-color: #1a1a1a
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #ff6767;
+  border-radius: 50%;
+  border: 0.2rem solid #ffffff;
+  cursor: pointer;
+  /* Add box-shadow to make the slider thumb more visible */
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.config-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.prefix {
+  margin-left: 1rem;
+  font-size: 1.5rem;
 }
